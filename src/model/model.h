@@ -57,7 +57,7 @@ class Model : public QAbstractTableModel
     List currentItems;//для модели
     QModelIndex currentIndex;
     int searchCount;
-    QString pattern;
+    QString pattern;//для подсветки
 
 public:
      List searchItems;//образец массива
