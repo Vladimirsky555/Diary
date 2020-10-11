@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/add1.png</file>
+        <file>images/arrows.png</file>
+        <file>images/clear.png</file>
+        <file>images/copyIcon.png</file>
+        <file>images/cut-fr.png</file>
+        <file>images/edit.png</file>
+        <file>images/ex.png</file>
+        <file>images/eye.png</file>
+        <file>images/font.png</file>
+        <file>images/information.png</file>
+        <file>images/paper.png</file>
+        <file>images/search.png</file>
+        <file>images/search_.png</file>
+        <file>images/show.png</file>
+        <file>images/undoIcon.png</file>
+        <file>images/delete.png</file>
+        <file>images/diaryLabel.png</file>
+        <file>images/pasteIcon.png</file>
+        <file>images/redoIcon.png</file>
+        <file>images/rgb.png</file>
+    </qresource>
+</RCC>

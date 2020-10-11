@@ -1,12 +1,11 @@
-#include "mainwindow/mainwindow.h"
+#include "mainwindow.h"
 #include "application.h"
 
 int main(int argc, char *argv[])
 {
-    Application app(argc, argv);
-
+    Application a(argc, argv);
     MainWindow w;
     w.show();
 
-    return app.exec();
+    return a.exec();
 }
