@@ -9,6 +9,7 @@ LoginDialog::LoginDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowTitle("Авторизация");
+	ui->edtPassword->setEchoMode(QLineEdit::EchoMode::Password);
 }
 
 LoginDialog::~LoginDialog()

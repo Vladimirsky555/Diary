@@ -74,7 +74,6 @@ MainWindow::createUI()
     ui->tableView->horizontalHeader()->setSectionResizeMode(3, QHeaderView::Stretch);
     ui->tableView->setColumnHidden(0, true);
     ui->tableView->setColumnHidden(4, true);
-//    ui->tableView->setAlternatingRowColors(true);
 }
 
 void MainWindow::on_btnAll_clicked()
@@ -110,6 +109,7 @@ void MainWindow::Login()
        ui->groupBox->setEnabled(true);
        ui->tableView->setEnabled(true);
        ui->btnAddNote->setHidden(false);
+	   ui->btnLogin->setHidden(true);
     }
 }
 
