@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     dialog.cpp \
     application.cpp \
     showitemwindow.cpp \
-    regexphighlighter.cpp
+    regexphighlighter.cpp \
+    logindialog.cpp
 
 HEADERS  += mainwindow.h \
     data.h \
@@ -28,11 +29,13 @@ HEADERS  += mainwindow.h \
     dialog.h \
     application.h \
     showitemwindow.h \
-    regexphighlighter.h
+    regexphighlighter.h \
+    logindialog.h
 
 FORMS    += mainwindow.ui \
     dialog.ui \
-    showitemwindow.ui
+    showitemwindow.ui \
+    logindialog.ui
 
 RESOURCES += \
     bin/img.qrc

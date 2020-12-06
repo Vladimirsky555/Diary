@@ -5,6 +5,7 @@
 
 #include "model.h"
 #include "dialog.h"
+#include "logindialog.h"
 
 namespace Ui {
 class MainWindow;
@@ -32,7 +33,7 @@ private slots:
 
     //ToolButtons
     void clearSearchItems();
-
+    void Login();
 
 signals:
     void sendIndextoModel(QModelIndex index);

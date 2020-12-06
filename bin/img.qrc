@@ -20,5 +20,6 @@
         <file>images/pasteIcon.png</file>
         <file>images/redoIcon.png</file>
         <file>images/rgb.png</file>
+        <file>images/login-password.png</file>
     </qresource>
 </RCC>

@@ -11,6 +11,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     setWindowTitle("Дневник");
 
+    ui->groupBox->setEnabled(false);
+    ui->tableView->setEnabled(false);
+    ui->btnAddNote->setHidden(true);
+
     M = new Model(this);
     M->setEditStrategy(QSqlTableModel::OnFieldChange);
 
@@ -20,8 +24,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->lblPix->setPixmap(pix.scaledToWidth(200));
 
     ui->btnClear->setDefaultAction(ui->actionClear);
-    connect(ui->actionClear, SIGNAL(triggered()),
-            this, SLOT(clearSearchItems()));
+    connect(ui->actionClear, SIGNAL(triggered()),this, SLOT(clearSearchItems()));
+
+    ui->btnLogin->setDefaultAction(ui->actionLogin);
+    connect(ui->actionLogin, SIGNAL(triggered()), this, SLOT(Login()));
+
+
 
 
     ui->cbxCategory->addItems(QStringList() <<
@@ -90,6 +98,19 @@ void MainWindow::clearSearchItems()
     ui->rYear_m->setChecked(true);
     ui->cbxCategory->setCurrentIndex(0);
     ui->edtPattern_m->setText("");
+}
+
+void MainWindow::Login()
+{
+    LoginDialog login;
+    login.exec();
+
+    if(login.getIsLogined())
+    {
+       ui->groupBox->setEnabled(true);
+       ui->tableView->setEnabled(true);
+       ui->btnAddNote->setHidden(false);
+    }
 }
 
 
@@ -164,4 +185,6 @@ void MainWindow::closeEvent(QCloseEvent *event)
     emit shutdown();
     QWidget::closeEvent(event);
 }
+
+
 
