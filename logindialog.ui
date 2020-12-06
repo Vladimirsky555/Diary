@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>264</width>
+    <width>196</width>
     <height>155</height>
    </rect>
   </property>
@@ -81,6 +81,11 @@
        <property name="text">
         <string>Отмена</string>
        </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/images/close.png</normalon>
+        </iconset>
+       </property>
       </widget>
      </item>
      <item>
@@ -93,12 +98,23 @@
        <property name="text">
         <string>Вход</string>
        </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/images/enter.png</normalon>
+        </iconset>
+       </property>
       </widget>
      </item>
     </layout>
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>edtLogin</tabstop>
+  <tabstop>edtPassword</tabstop>
+  <tabstop>btnEnter</tabstop>
+  <tabstop>btnCancel</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

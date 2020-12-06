@@ -21,5 +21,8 @@
         <file>images/redoIcon.png</file>
         <file>images/rgb.png</file>
         <file>images/login-password.png</file>
+        <file>images/close.png</file>
+        <file>images/save-text.png</file>
+        <file>images/enter.png</file>
     </qresource>
 </RCC>
